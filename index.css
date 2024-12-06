@@ -1,0 +1,85 @@
+body{
+    background: rgba(172, 4, 97, 0.666);
+    color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin: 100px auto 30px;
+    cursor: pointer;
+}
+form{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+}
+form input{
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background: rgba(130, 38, 90, 0.666);
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+    padding: 5px 20px;
+    width: 85%;
+    color: white;
+}
+::placeholder{
+    color: rgb(227, 202, 202);
+}
+form button{
+    height: 50px;
+    outline: 0;
+    width: 25%;
+    border: 0;
+    background: red;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+#showBtn{
+    outline: 0;
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px auto 30px;
+    border: 0;
+    background: red;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    display: none;
+}
+.result{
+    display: grid;
+    gap: 2rem;
+}
+.result img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+}
+
+@media only screen and (min-width:800px){
+    
+.result{
+    grid-gap:2rem 2rem;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.result img{
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+}
